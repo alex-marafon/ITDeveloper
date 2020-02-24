@@ -1,0 +1,26 @@
+﻿@using Cooperchip.ITDeveloper.Domain.Enums
+@model Cooperchip.ITDeveloper.Domain.Models.Paciente
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <partial name="_create_edit" />
+
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-success" /> |
+                <a asp-controller="Pacientes" asp-action="Index" class="btn btn-info">Voltar a Lista</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+

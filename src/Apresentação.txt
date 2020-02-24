@@ -1,0 +1,7 @@
+Nosso projeto segue recomendação de padrao DDD com MVC e esta dividido em 4 camadas principais e mas  sub-camadas, sendo elas
+Apresentação, Aplicação, Dominio e Infra. 
+
+Na camada de Apresentação ficara concentrada as ViewModels e toda a parte de View da solução.
+Na camada de Aplicação
+Na camada de Dominio ficara nossas entitys nosso modelo de banco.
+Na camada de Infra ficara nossas migrations e nossa conexao ORM.

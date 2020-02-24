@@ -1,0 +1,5 @@
+C:\Users\alex.marafon\Desktop\cooperchip-\src\Cooperchip.ITDeveloper.Data\bin\Debug\netcoreapp3.0\Cooperchip.ITDeveloper.Data.deps.json
+C:\Users\alex.marafon\Desktop\cooperchip-\src\Cooperchip.ITDeveloper.Data\bin\Debug\netcoreapp3.0\Cooperchip.ITDeveloper.Data.dll
+C:\Users\alex.marafon\Desktop\cooperchip-\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp3.0\Cooperchip.ITDeveloper.Data.csprojAssemblyReference.cache
+C:\Users\alex.marafon\Desktop\cooperchip-\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp3.0\Cooperchip.ITDeveloper.Data.AssemblyInfoInputs.cache
+C:\Users\alex.marafon\Desktop\cooperchip-\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp3.0\Cooperchip.ITDeveloper.Data.AssemblyInfo.cs

@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Checkout";
+    }
+
+    <div class="container-fluid" col-lg-12 col-md-12 col-sm12 col-sm-12>
+        <div class="row">
+            <div class="panel panel-heading">
+                <h3>Formulario de Checkout</h3>
+            </div>
+            <div class="panel panel-body">
+                @* Nossas Validaçoes aqui... *@
+                @TempData
+                @Html.ValidationSummary(excludePropertyErrors: false, message: "", new { @class="text-danger"})
+            </div>
+        </div>
+    </div>
+
