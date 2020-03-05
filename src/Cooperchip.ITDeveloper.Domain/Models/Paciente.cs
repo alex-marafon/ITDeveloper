@@ -10,7 +10,6 @@ namespace Cooperchip.ITDeveloper.Domain.Models
     {
         public Paciente()
         {
-            //this.DataInternacao = DateTime.Now;
             Ativo = true;
         }
 
@@ -18,8 +17,6 @@ namespace Cooperchip.ITDeveloper.Domain.Models
         [Display(Name="Estado do Paciente")] //Mudando o nome Estetica em caso de erro e etc...
         public Guid EstadoPacienteId { get; set; } //guarda o id do estado do paciente - relacionamento para saber qual o estado do paciente que esta na outra entidade
         public virtual EstadoPaciente EstadoPaciente { get; set; } //campo de navegação - cria o relacionamento entra a entidade "EstadoPaciente" e "Paciente". a partir dessa navegação e possivel obter o "EstadoPaciente" da entidade.
-
-
 
         public string Nome { get; set; }
         public DateTime DataNascimento { get; set; }
@@ -33,9 +30,9 @@ namespace Cooperchip.ITDeveloper.Domain.Models
         public string Rgorgao { get; set; }
         public DateTime RgDataEmissao { get; set; }
 
-        public override string ToString()
-        {
-            return this.Id.ToString() + "  -  " + this.Nome;
-        }
+        //public override string ToString()
+        //{
+        //    return this.Id.ToString() + "  -  " + this.Nome;
+        //}
     }
 }

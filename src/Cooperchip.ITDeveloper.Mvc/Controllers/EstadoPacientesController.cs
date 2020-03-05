@@ -62,8 +62,8 @@ namespace Cooperchip.ITDeveloper.Mvc.Controllers
                 estadoPaciente.Id = Guid.NewGuid(); //Não usa,
                 _context.Add(estadoPaciente);
                 await _context.SaveChangesAsync();
-                //return RedirectToAction(nameof(Index));
-                return RedirectToAction("Index");
+                return RedirectToAction(nameof(Index));
+                //return RedirectToAction("Index");
             }
            
             return View(estadoPaciente);

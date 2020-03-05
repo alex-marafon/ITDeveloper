@@ -3,15 +3,28 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Cooperchip.ITDeveloper.Data.Migrations
 {
-    public partial class AddPaciente : Migration
+    public partial class AddPacienteEestadoPaciente : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "EstadoPaciente",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(nullable: false),
+                    Descricao = table.Column<string>(maxLength: 20, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_EstadoPaciente", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Paciente",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
+                    EstadoPacienteId = table.Column<Guid>(nullable: false),
                     Nome = table.Column<string>(nullable: true),
                     DataNascimento = table.Column<DateTime>(nullable: false),
                     DataInternacao = table.Column<DateTime>(nullable: false),
@@ -27,13 +40,27 @@ namespace Cooperchip.ITDeveloper.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Paciente", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Paciente_EstadoPaciente_EstadoPacienteId",
+                        column: x => x.EstadoPacienteId,
+                        principalTable: "EstadoPaciente",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Paciente_EstadoPacienteId",
+                table: "Paciente",
+                column: "EstadoPacienteId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
                 name: "Paciente");
+
+            migrationBuilder.DropTable(
+                name: "EstadoPaciente");
         }
     }
 }

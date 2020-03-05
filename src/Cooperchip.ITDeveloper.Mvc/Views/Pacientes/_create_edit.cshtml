@@ -43,13 +43,22 @@
     <span asp-validation-for="TipoPaciente" class="text-danger"></span>
 </div>
 
-<div class="form-group">
-    <label asp-for="EstadoPaciente" class="control-label"></label>
-    <select asp-for="EstadoPaciente" asp-items="@ViewBag.EstadoPaciente" class="form-control">
+
+
+
+@*<div class="form-group">
+    <label asp-for="EstadoPacienteId" class="control-label"></label>
+    <select asp-for="EstadoPacienteId" asp-items="@ViewBag.EstadoPaciente" class="form-control">
         <option value=""></option>
     </select>
-    <span asp-validation-for="EstadoPaciente" class="text-danger"></span>
-</div>
+    <span asp-validation-for="EstadoPacienteId" class="text-danger"></span>
+</div>*@
+
+@*<div>
+    <input type="hidden" name="EstadoPacienteId" value="4e1c5a60-a965-4ee6-b2a5-c15b6d71b7dd" />
+</div>*@
+
+
 
 <div class="form-group">
     <label asp-for="Sexo" class="control-label"></label>
@@ -58,6 +67,9 @@
     </select>
     <span asp-validation-for="Sexo" class="text-danger"></span>
 </div>
+
+
+
 <div class="form-group">
     <label asp-for="Rg" class="control-label"></label>
     <input asp-for="Rg" class="form-control" />

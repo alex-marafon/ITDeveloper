@@ -1,0 +1,11 @@
+C:\Users\Trut4's\Source\Repos\ITDeveloper\src\Cooperchip.ITDeveloper.Data\bin\Debug\netcoreapp2.2\Cooperchip.ITDeveloper.Data.deps.json
+C:\Users\Trut4's\Source\Repos\ITDeveloper\src\Cooperchip.ITDeveloper.Data\bin\Debug\netcoreapp2.2\Cooperchip.ITDeveloper.Data.dll
+C:\Users\Trut4's\Source\Repos\ITDeveloper\src\Cooperchip.ITDeveloper.Data\bin\Debug\netcoreapp2.2\Cooperchip.ITDeveloper.Data.pdb
+C:\Users\Trut4's\Source\Repos\ITDeveloper\src\Cooperchip.ITDeveloper.Data\bin\Debug\netcoreapp2.2\Cooperchip.ITDeveloper.Domain.dll
+C:\Users\Trut4's\Source\Repos\ITDeveloper\src\Cooperchip.ITDeveloper.Data\bin\Debug\netcoreapp2.2\Cooperchip.ITDeveloper.Domain.pdb
+C:\Users\Trut4's\Source\Repos\ITDeveloper\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp2.2\Cooperchip.ITDeveloper.Data.csprojAssemblyReference.cache
+C:\Users\Trut4's\Source\Repos\ITDeveloper\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp2.2\Cooperchip.ITDeveloper.Data.AssemblyInfoInputs.cache
+C:\Users\Trut4's\Source\Repos\ITDeveloper\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp2.2\Cooperchip.ITDeveloper.Data.AssemblyInfo.cs
+C:\Users\Trut4's\Source\Repos\ITDeveloper\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp2.2\Cooperchip.ITDeveloper.Data.csproj.CopyComplete
+C:\Users\Trut4's\Source\Repos\ITDeveloper\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp2.2\Cooperchip.ITDeveloper.Data.dll
+C:\Users\Trut4's\Source\Repos\ITDeveloper\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp2.2\Cooperchip.ITDeveloper.Data.pdb

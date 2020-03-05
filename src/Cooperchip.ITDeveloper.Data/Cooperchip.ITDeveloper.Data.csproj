@@ -5,6 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200214141542_AddPaciente.cs" />
+    <Compile Remove="Migrations\20200214141542_AddPaciente.Designer.cs" />
+    <Compile Remove="Migrations\20200219212630_AddEstadoPaciente.cs" />
+    <Compile Remove="Migrations\20200219212630_AddEstadoPaciente.Designer.cs" />
+    <Compile Remove="Migrations\20200220151743_AdFieldIdEstadoPacienteInPaciente.cs" />
+    <Compile Remove="Migrations\20200220151743_AdFieldIdEstadoPacienteInPaciente.Designer.cs" />
+    <Compile Remove="Migrations\20200225214954_AddEstadoPacienteNova.cs" />
+    <Compile Remove="Migrations\20200225214954_AddEstadoPacienteNova.Designer.cs" />
+    <Compile Remove="Migrations\20200225225717_AddEstadoPacienteteste.cs" />
+    <Compile Remove="Migrations\20200225225717_AddEstadoPacienteteste.Designer.cs" />
+    <Compile Remove="Migrations\20200226040027_teste.cs" />
+    <Compile Remove="Migrations\20200226040027_teste.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
   </ItemGroup>
 

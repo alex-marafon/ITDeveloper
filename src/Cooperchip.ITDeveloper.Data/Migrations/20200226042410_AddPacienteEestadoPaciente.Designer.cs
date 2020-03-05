@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Cooperchip.ITDeveloper.Data.Migrations
 {
     [DbContext(typeof(ITDeveloperDbContext))]
-    [Migration("20200214141542_AddPaciente")]
-    partial class AddPaciente
+    [Migration("20200226042410_AddPacienteEestadoPaciente")]
+    partial class AddPacienteEestadoPaciente
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -42,6 +42,20 @@ namespace Cooperchip.ITDeveloper.Data.Migrations
                     b.ToTable("Mural");
                 });
 
+            modelBuilder.Entity("Cooperchip.ITDeveloper.Domain.Models.EstadoPaciente", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasMaxLength(20);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EstadoPaciente");
+                });
+
             modelBuilder.Entity("Cooperchip.ITDeveloper.Domain.Models.Paciente", b =>
                 {
                     b.Property<Guid>("Id")
@@ -57,6 +71,8 @@ namespace Cooperchip.ITDeveloper.Data.Migrations
 
                     b.Property<string>("Email");
 
+                    b.Property<Guid>("EstadoPacienteId");
+
                     b.Property<string>("Nome");
 
                     b.Property<string>("Rg");
@@ -71,7 +87,17 @@ namespace Cooperchip.ITDeveloper.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("EstadoPacienteId");
+
                     b.ToTable("Paciente");
+                });
+
+            modelBuilder.Entity("Cooperchip.ITDeveloper.Domain.Models.Paciente", b =>
+                {
+                    b.HasOne("Cooperchip.ITDeveloper.Domain.Models.EstadoPaciente", "EstadoPaciente")
+                        .WithMany()
+                        .HasForeignKey("EstadoPacienteId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }
